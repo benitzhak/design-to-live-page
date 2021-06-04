@@ -108,7 +108,6 @@ header .logo {
 
 .card {
     margin-top: 77px;
-    /* max-height: 312px; */
 }
 
 .card:last-child {
@@ -229,9 +228,6 @@ header .logo {
 .main-layout {
     margin: 0 auto;
     max-width: 981px;
-    /* width: 981px; */
-    /* padding: 0 16.25rem; */
-    /* text-align: center; */
 }
 
 
