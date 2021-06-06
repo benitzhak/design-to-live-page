@@ -10,11 +10,13 @@
 </head>
 
 <body>
+    <div onclick="closeModal()" class="main-screen"></div>
     <header class="main-header">
         <div class="header-container flex align-center space-between main-layout">
             <div class="logo">Blogin<span class="logo-dot">.</span></div>
+            <div onclick="toggleMenu()" class="menu-btn">☰</div>
             <nav class="main-nav">
-                <ul class="nav-list clean-list flex">
+                <ul class="nav-list clean-list flex ">
                     <li><a href="#">Journal</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Work</a></li>
@@ -24,6 +26,15 @@
         </nav>
     </header>
     <main class="main-content main-layout flex">
+        <div class="modal">
+            <h2>Join us to get access to the latest stories!</h2>
+            <form>
+                <label for="email">email:</label>
+                <input type="email" name="email" placeholder="enter your email here">
+                <button onclick="closeModal(event)" class="submit">submit</button>
+            </form>
+            <button onclick="closeModal()" class="close-modal">close</button>
+        </div>
         <div class="card flex">
             <img src="img/img1.png" alt="" class="card-img">
             <div class="card-content flex">
@@ -31,7 +42,7 @@
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<span> Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur...</span></p>
                 <div class="btn-card">
-                    <button>continue reading<span>→</span></button>
+                    <button onclick="openModal()">continue reading<span>→</span></button>
                 </div>
             </div>
         </div>
@@ -42,7 +53,7 @@
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<span> Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur...</span></p>
                 <div class="btn-card">
-                    <button>continue reading  <span>→</span></button>
+                    <button onclick="openModal()">continue reading<span>→</span></button>
                 </div>
             </div>
         </div>
@@ -52,29 +63,30 @@
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<span> Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur...</span></p>
-                <div class="btn-card">
-                    <button>continue reading<span>→</span></button>
+                <div class="btn-card" ">
+                  <button onclick="openModal() ">continue reading<span>→</span></button>
                 </div>
             </div>
         </div>
         </div>
     </main>
-    <section class="pagind main-layout flex space-between align-center">
+    <section class="pagind main-layout flex space-between align-center ">
         <div>← previus</div>
         <div>next →</div>
     </section>
-    <footer class="main-footer main-layout">
-        <div class="footer-container">
-            <div class="logo">Blogin<span class="logo-dot">.</span></div>
-            <small class="small">© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at Pixelhint.com</small>
-            <ul class="social-nav flex clean-list">
-                <li><img src="img/icons/facbook icon.png" alt="" class="icon"></li>
-                <li><img src="img/icons/twiter icon.png" alt="" class="icon"></li>
-                <li><img src="img/icons/be icon.png" alt="" class="icon"></li>
-                <li><img src="img/icons/dribbble icon.png" alt="" class="icon"></li>
+    <footer class="main-footer main-layout ">
+        <div class="footer-container ">
+            <div class="logo ">Blogin<span class="logo-dot ">.</span></div>
+            <small class="small ">© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at Pixelhint.com</small>
+            <ul class="social-nav flex clean-list ">
+                <li><img src="img/icons/facbook icon.png " alt=" " class="icon "></li>
+                <li><img src="img/icons/twiter icon.png " alt=" " class="icon "></li>
+                <li><img src="img/icons/be icon.png " alt=" " class="icon "></li>
+                <li><img src="img/icons/dribbble icon.png " alt=" " class="icon "></li>
             </ul>
         </div>
     </footer>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
